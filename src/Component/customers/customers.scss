@@ -1,0 +1,130 @@
+.customers{
+  position: relative;
+  &__subtitle{
+    text-align: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #514040;
+
+  }
+  &__title{
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #313131;
+    margin: 30px 0 183px;
+  }
+  &__card{
+    padding: 40px 24px 40px 32px;
+    background: #FFFFFF;
+    box-shadow: 0 100px 80px rgba(49, 49, 49, 0.1);
+    border-radius: 5px;
+    &-title{
+      font-family: 'Inter',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #32435C;
+    }
+    &-subtitle{
+      font-family: 'Inter',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.01em;
+      color: #6A635B;
+      width: 324px;
+      margin: 20px 0;
+    }
+  }
+  &__menu{
+    display: flex;
+  }
+  &__text{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #32435C;
+    margin-top: 21px;
+  }
+  &__box{
+    width: 892px;
+    height: 540px;
+    background: #F2F2F2;
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 447px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .customers__card{
+    padding: 40px 15px 40px 15px;
+  }
+  .customers__card-subtitle{
+    line-height: 20px!important;
+    width: 260px!important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .customers__card-subtitle{
+    line-height: 20px!important;
+    width: 200px!important;
+  }
+  .customers__box{
+    width: 768px;
+    height: 540px;
+    background: #F2F2F2;
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 384px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .customers__box{
+    width: 576px;
+    left: calc(50% - 288px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .customers__box{
+    width: 426px;
+    left: calc(50% - 213px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .customers{
+    &__title{
+      font-size: 35px;
+    }
+    &__box{
+      width: 100%!important;
+      left: calc(100% - 100%);
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .customers{
+    &__title{
+      font-size: 35px;
+    }
+    &__box{
+      width: 100%!important;
+      left: calc(100% - 100%);
+    }
+  }
+}

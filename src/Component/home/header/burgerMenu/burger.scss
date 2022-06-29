@@ -1,0 +1,38 @@
+.burger{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 100px;
+  left: 0;
+  transform: translateX(-130%);
+  transition: all 0.2s;
+  &.active{
+    transform: translateX(0);
+  }
+  &__blur{
+    width: 100vw;
+    height: 100vh;
+    left: 30%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+  }
+  &__content{
+    width: 30%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+  }
+  &__menu{
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__list{
+    color: white;
+  }
+}

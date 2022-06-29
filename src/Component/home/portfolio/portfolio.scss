@@ -1,0 +1,136 @@
+.portfolio{
+  &__subtitle{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #514040;
+    text-align: center;
+  }
+  &__title{
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 45px;
+    line-height: 53px;
+    color: #313131;
+    text-align: center;
+    margin: 30px 0 80px;
+  }
+  &__box{
+    display: flex;
+    justify-content: center;
+    column-gap: 49px;
+  }
+  &__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    &-title{
+      font-family: 'Gilroy-Medium', sans-serif;
+      font-size: 28px;
+      line-height: 33px;
+      color: #000000;
+    }
+    &-subtitle{
+      font-family: 'Gilroy-Medium', sans-serif;
+      font-size: 18px;
+      line-height: 21px;
+      color: #49AD09;
+      cursor: pointer;
+    }
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    border: none;
+    width: 225px;
+    height: 58px;
+    background: #49AD09;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    border-radius: 5px;
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin: 98px 0 158px;
+  }
+}
+
+@media screen and(max-width: 1199px){
+  .portfolio__box{
+    column-gap: 30px;
+  }
+  .portfolio__card-img{
+    width: 450px!important;
+  }
+}
+
+@media screen and(max-width: 1199px){
+  .portfolio__card-img{
+    width: 360px!important;
+  }
+  .portfolio__text-title{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and(max-width: 767px){
+  .portfolio__box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio__card-img{
+    width: 450px!important;
+  }
+  .lower{
+    margin-top: 5px!important;
+  }
+}
+
+@media screen and(max-width: 575px){
+  .portfolio__card{
+    padding: 0 15px;
+    &-img{
+      width: 100%!important;
+    }
+  }
+  .lower{
+    margin-top: 5px!important;
+  }
+}
+
+@media screen and(max-width: 375px){
+  .portfolio{
+    &__title{
+      font-size: 35px;
+    }
+    &__text-title{
+      font-size: 16px;
+    }
+    &__text-subtitle{
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and(max-width: 425px){
+  .portfolio{
+    &__title{
+      font-size: 35px;
+    }
+    &__text-title{
+      font-size: 16px;
+    }
+    &__text-subtitle{
+      font-size: 16px;
+    }
+    &__btn{
+      width: 160px;
+      font-size: 18px;
+    }
+  }
+}
